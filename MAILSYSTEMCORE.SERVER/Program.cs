@@ -1,11 +1,16 @@
-using MAILSYSTEMCORE.SERVER.Data;
+using MAILSYSTEMCORE.SERVER.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddSingleton<WeatherForecastService>();
+
+// Install services - Dependency Injection to all api client items.
+builder.Services
+    .InstallServices(
+        builder.Configuration,
+        typeof(IServiceInstaller).Assembly);
 
 var app = builder.Build();
 

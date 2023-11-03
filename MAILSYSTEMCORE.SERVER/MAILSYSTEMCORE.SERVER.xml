@@ -4,5 +4,292 @@
         <name>MAILSYSTEMCORE.SERVER</name>
     </assembly>
     <members>
+        <member name="M:MAILSYSTEMCORE.SERVER.Configuration.ApiClientServiceInstaller.Install(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Dependency Injection configuration.
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IAccountClient.LoginAsync(MAILSYSTEMCORE.SERVER.Services.LoginRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IAccountClient.LoginAsync(MAILSYSTEMCORE.SERVER.Services.LoginRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.AccountClient.LoginAsync(MAILSYSTEMCORE.SERVER.Services.LoginRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.AccountClient.LoginAsync(MAILSYSTEMCORE.SERVER.Services.LoginRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.CreateCompanyAsync(MAILSYSTEMCORE.SERVER.Services.RegisterCompanyRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.CreateCompanyAsync(MAILSYSTEMCORE.SERVER.Services.RegisterCompanyRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetAllCompaniesAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetAllCompaniesAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByNameAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByNameAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByEmailAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ICompanyClient.GetCompanyByEmailAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.CreateCompanyAsync(MAILSYSTEMCORE.SERVER.Services.RegisterCompanyRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.CreateCompanyAsync(MAILSYSTEMCORE.SERVER.Services.RegisterCompanyRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetAllCompaniesAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetAllCompaniesAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByNameAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByNameAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByEmailAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.CompanyClient.GetCompanyByEmailAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.CreateListItemAsync(MAILSYSTEMCORE.SERVER.Services.RegisterListItemRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.CreateListItemAsync(MAILSYSTEMCORE.SERVER.Services.RegisterListItemRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetAllListItemsAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetAllListItemsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByIdAsync(System.Guid)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByCategoryAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByCategoryAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByTagAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IListItemClient.GetListItemByTagAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.CreateListItemAsync(MAILSYSTEMCORE.SERVER.Services.RegisterListItemRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.CreateListItemAsync(MAILSYSTEMCORE.SERVER.Services.RegisterListItemRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetAllListItemsAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetAllListItemsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByIdAsync(System.Guid)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByIdAsync(System.Guid,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByCategoryAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByCategoryAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByTagAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.ListItemClient.GetListItemByTagAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.CreateCreateMailJobAsync(MAILSYSTEMCORE.SERVER.Services.MailingItemRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.CreateCreateMailJobAsync(MAILSYSTEMCORE.SERVER.Services.MailingItemRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetMailJobByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetMailJobByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetDetailsByJobIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetDetailsByJobIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetMailDataAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IMailingClient.GetMailDataAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.CreateCreateMailJobAsync(MAILSYSTEMCORE.SERVER.Services.MailingItemRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.CreateCreateMailJobAsync(MAILSYSTEMCORE.SERVER.Services.MailingItemRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetMailJobByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetMailJobByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetDetailsByJobIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetDetailsByJobIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetMailDataAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.MailingClient.GetMailDataAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.CreateStateAsync(MAILSYSTEMCORE.SERVER.Services.RegisterStateRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.CreateStateAsync(MAILSYSTEMCORE.SERVER.Services.RegisterStateRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetAllListItemsAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetAllListItemsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByNameAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByNameAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByAbbreviationAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.IStateClient.GetStateByAbbreviationAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.CreateStateAsync(MAILSYSTEMCORE.SERVER.Services.RegisterStateRequest)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.CreateStateAsync(MAILSYSTEMCORE.SERVER.Services.RegisterStateRequest,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetAllListItemsAsync">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetAllListItemsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByIdAsync(System.Nullable{System.Guid})">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByIdAsync(System.Nullable{System.Guid},System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByNameAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByNameAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByAbbreviationAsync(System.String)">
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MAILSYSTEMCORE.SERVER.Services.StateClient.GetStateByAbbreviationAsync(System.String,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <exception cref="T:MAILSYSTEMCORE.SERVER.Services.ApiException">A server side error occurred.</exception>
+        </member>
     </members>
 </doc>

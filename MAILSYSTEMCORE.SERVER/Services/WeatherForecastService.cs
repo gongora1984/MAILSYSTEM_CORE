@@ -1,4 +1,6 @@
-namespace MAILSYSTEMCORE.SERVER.Data;
+using MAILSYSTEMCORE.SERVER.Data;
+
+namespace MAILSYSTEMCORE.SERVER.Services;
 
 public class WeatherForecastService
 {
@@ -13,7 +15,8 @@ public class WeatherForecastService
         {
             Date = startDate.AddDays(index),
             TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
+            Summary = Summaries[Random.Shared.Next(Summaries.Length)],
+            ////StatusCode = loginResult.Result.StatusCode
         }).ToArray());
     }
 }
